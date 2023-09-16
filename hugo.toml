@@ -1,0 +1,9 @@
+languageCode = "en-us"
+title = "Gio Tools"
+disableKinds = ["RSS", "sitemap", "taxonomy", "section"]
+
+[permalinks]
+pkgs = "/:filename/"
+
+[minify]
+minifyOutput = true

@@ -1,0 +1,9 @@
+{{ define "head" }}
+	{{ $pkgName := .File.BaseFileName -}}
+	{{ $modPath := printf "gio.tools/%s" $pkgName }}
+	{{ $srcURL := printf "https://github.com/gio-tools/%s" $pkgName -}}
+
+	<meta name="go-import" content="{{ $modPath }} git {{ $srcURL }}">
+	<meta name="go-source" content="{{ $modPath }} {{ $srcURL }} {{ $srcURL }}/tree/master{/dir} {{ $srcURL }}/blob/master{/dir}/{file}#L{line}">
+	<title>gio.tools/{{ $pkgName }}</title>
+{{ end }}
